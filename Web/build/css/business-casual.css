@@ -21,6 +21,9 @@ body {
 .actived {
 	background-color:#D9C5DB;
 }
+.actived > div {
+    color:white !important;
+}
 .actived > a {
 	color:white !important;
 }

@@ -1,6 +1,4 @@
-$('.carousel').carousel({
-    interval: 5000 //changes the speed
-})
+
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -19,14 +17,45 @@ function getCookie(cname) {
     }
     return "";
 }
-var cookie = getCookie('shown');
-console.log('cookie :', cookie);
-if (!cookie) {
-    showPopup();
-}
+
 
 function showPopup() {
     setCookie('shown', 'true', 365);
     $("#infoModal").modal('show');
 
 }
+
+function changePage(ev) {
+    ev.preventDefault();
+    // Hide previous page
+    let activePage = $("li.actived").data('page');
+    $("li.actived").removeClass('actived');
+
+    let hideClass = `#page-${activePage}`;
+    $(hideClass).addClass('hide');
+    // Show next page
+    let hiddenPage = $(ev.srcElement).parent().data('page');
+    let showClass = `#page-${hiddenPage}`;
+    console.log('Hidden', showClass);
+    $(showClass).removeClass('hide');
+    
+    $(ev.srcElement).parent().addClass('actived');
+
+
+    
+}
+
+
+/**
+ * Implementation part
+ */
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+})
+
+var cookie = getCookie('shown');
+console.log('cookie :', cookie);
+if (!cookie) {
+    showPopup();
+}
+
