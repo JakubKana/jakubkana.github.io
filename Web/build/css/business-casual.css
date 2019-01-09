@@ -105,6 +105,7 @@ hr {
     border-color: #999999;
 }
 .box {
+	border-radius: 25px;
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
