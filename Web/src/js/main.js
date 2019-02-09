@@ -1,5 +1,8 @@
 
 
+
+
+
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -53,9 +56,9 @@ $('.carousel').carousel({
     interval: 5000 //changes the speed
 })
 
-var cookie = getCookie('shown');
-console.log('cookie :', cookie);
-if (!cookie) {
-    showPopup();
-}
+// var cookie = getCookie('shown');
+// console.log('cookie :', cookie);
+// if (!cookie) {
+//     showPopup();
+// }
 

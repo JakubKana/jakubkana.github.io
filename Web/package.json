@@ -4,7 +4,8 @@
   "description": "Janet Pedikura Web",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
   },
   "keywords": [
     "janet",
@@ -31,6 +32,7 @@
     "gulp-uglify": "^3.0.1"
   },
   "dependencies": {
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "lite-server": "^2.4.0"
   }
 }
