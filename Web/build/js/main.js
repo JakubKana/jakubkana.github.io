@@ -51,10 +51,8 @@ function changePage(ev) {
 $('.carousel').carousel({
   interval: 5000 //changes the speed
 
-});
-var cookie = getCookie('shown');
-console.log('cookie :', cookie);
-
-if (!cookie) {
-  showPopup();
-}
+}); // var cookie = getCookie('shown');
+// console.log('cookie :', cookie);
+// if (!cookie) {
+//     showPopup();
+// }
