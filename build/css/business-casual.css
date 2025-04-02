@@ -19,7 +19,7 @@ body {
 	border:2px solid pink;
 }
 .actived {
-	background-color:#D9C5DB;
+	background-color:#ff53cbe1;
 }
 .actived > div {
     color:white !important;

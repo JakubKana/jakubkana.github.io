@@ -1,0 +1,15 @@
+const CENIK = {
+  postposition: ",-",
+  preposition: "+",
+  currency: "Kč",
+  zakladni_osetreni: 420,
+  masaz_chodidel: 50,
+  osetreni_nohou: 50,
+  odstraneni_kurich_ok: 20,
+  nadmerne_odstraneni_zrohovatele_kuze: 50,
+  lakovani_barevne: 50,
+  lakovani_francouzske: 70,
+  dekorativni_zdobeni: 20,
+  odlakovani_stareho_laku: 10,
+  darkovy_poukaz: 420,
+};

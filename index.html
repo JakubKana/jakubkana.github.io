@@ -278,13 +278,14 @@
               </h2>
               <div class="col-lg-12 text-center">
                 <h4>
-                  <small>Platný od 1. 1. 2024</small>
+                  <small>Platný od 2. 4. 2025</small>
                 </h4>
                 <hr />
               </div>
             </div>
           </div>
           <div class="box">
+            <!-- Ceník loaded from the cenik.js -->
             <table class="table table-striped table-hover">
               <thead>
                 <tr>
@@ -295,43 +296,43 @@
               <tbody>
                 <tr>
                   <td>Základní ošetření - mokrá pedikúra</td>
-                  <td>400,- Kč</td>
+                  <td id="zakladni_osetreni_value"></td>
                 </tr>
                 <tr>
                   <td>Masáž chodidel (olejem 10 min.)</td>
-                  <td>50,- Kč</td>
+                  <td id="masaz_chodidel_value"></td>
                 </tr>
                 <tr>
                   <td>Ošetření nohou peelingem</td>
-                  <td>50,- Kč</td>
+                  <td id="osetreni_nohou_value"></td>
                 </tr>
                 <tr>
                   <td>Odstranění kuřích ok (1 ks)</td>
-                  <td>20,- Kč</td>
+                  <td id="odstraneni_kurich_ok_value"></td>
                 </tr>
                 <tr>
                   <td>Nadměrné odstranění zrohovatělé kůže</td>
-                  <td>+ 50,- Kč</td>
+                  <td id="nadmerne_odstraneni_zrohovatele_kuze_value"></td>
                 </tr>
                 <tr>
                   <td>Lakování (barevné)</td>
-                  <td>40,- Kč</td>
+                  <td id="lakovani_barevne_value"></td>
                 </tr>
                 <tr>
                   <td>Lakování (francouzské)</td>
-                  <td>50,- Kč</td>
+                  <td id="lakovani_francouzske_value"></td>
                 </tr>
                 <tr>
                   <td>Dekorativní zdobení</td>
-                  <td>20,- Kč</td>
+                  <td id="dekorativni_zdobeni_value"></td>
                 </tr>
                 <tr>
                   <td>Odlakování starého laku</td>
-                  <td>10,- Kč</td>
+                  <td id="odlakovani_stareho_laku_value"></td>
                 </tr>
                 <tr>
                   <td>Dárkový poukaz (mokrá pedikúra + masáž chodidel)</td>
-                  <td>300,- Kč</td>
+                  <td id="darkovy_poukaz_value"></td>
                 </tr>
               </tbody>
             </table>
@@ -340,10 +341,10 @@
         <hr />
         <div class="text-center">
           <a
-            class="btn btn-info btn-lg text-center"
+            class="btn btn-primary btn-lg text-center"
             href="build/download/cenik.pdf"
             download="Janet-Cenik.pdf"
-            >Stáhnout PDF</a
+            >Stáhnout ceník</a
           >
         </div>
         <hr />
@@ -868,7 +869,7 @@
             <h4 class="modal-title">INFORMACE PRO ZÁKAZNÍKY</h4>
           </div>
           <div class="modal-body">
-            <p>Aktualizace ceny základního ošetření od 1.1.2023</p>
+            <p>Aktualizace ceny základního ošetření od 2.4.2025</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -884,7 +885,7 @@
           <div class="col-lg-12 text-center">
             <p>
               <small
-                >Copyright &copy; Salón Janet 2019 |
+                >Copyright &copy; Salón Janet 2025 |
                 <i> Janetta Mazurková</i></small
               >
               <a href="https://www.facebook.com/janetpedikura" target="_blank">
@@ -902,6 +903,7 @@
     <script src="build/js/bootstrap.min.js"></script>
     <script src="build/js/lightbox.js"></script>
     <!-- Script to Activate the Carousel -->
+    <script src="build/data/cenik.js"></script>
     <script src="build/js/main.js"></script>
   </body>
 </html>
